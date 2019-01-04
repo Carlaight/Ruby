@@ -4,13 +4,18 @@ print "> Entre 1 et 25 : "
 
 floors = gets.chomp.to_i
 
-
+nbfloors = floors
+space = " "
 n  = 1
 
+
 while (n <= floors)
+    print space * nbfloors
     puts "#"* n
     n = n + 1
+    nbfloors = nbfloors - 1
 end
+
 
 
 
